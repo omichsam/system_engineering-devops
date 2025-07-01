@@ -1,2 +1,9 @@
 #!/bin/bash
-find . -type d -exec chmod +x {} \;
+# Loop through all items in the current directory
+for item in *; do
+  # Check if the item is a directory
+  if [ -d "$item" ]; then
+    # Add execute permission for owner, group, and others
+    chmod a+x "$item"
+  fi
+done

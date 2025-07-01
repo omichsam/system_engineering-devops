@@ -1,2 +1,3 @@
 #!/bin/bash
-for item in *; do if [ -d "$item" ]; then chmod a+x "$item"; fi; done
+find . -maxdepth 1 -type d -exec chmod a+x {} +
+

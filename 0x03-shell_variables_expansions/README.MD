@@ -15,6 +15,8 @@ This project counts towards **12.5%** of your final grade in SE 102.
 - List and manipulate global and local shell variables
 - Use shell arithmetic
 
+
+
 ## Project Structure
 
 All scripts are stored in the directory:  

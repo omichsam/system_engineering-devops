@@ -1,7 +1,11 @@
-#!/usr/bin/env bash
-# displays the content of the current working directory.
+#!/bin/bash
 
-for i in *
-do
-    echo "$i" | cut -d'-' -f2
+for file in *; do
+  # Check if it's a file or directory (optional, ls shows both)
+  # Extract part after first dash or full name if no dash
+  if [[ "$file" == *-* ]]; then
+    echo "${file#*-}"
+  else
+    echo "$file"
+  fi
 done
